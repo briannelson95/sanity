@@ -26,23 +26,21 @@ export default {
             type: 'number'
         },
         {
+            name: 'trailHiked',
+            title: 'Trail Hiked',
+            type: 'reference',
+            to: {type: 'trail'},
+        },
+        {
             name: 'location',
-            title: 'Trail Hiked/Location',
-            type: 'array',
-            of: [
-                {
-                    title: 'Trail Name',
-                    type: 'string',
-                },
-                {
-                    type: 'geopoint'
-                }
-            ]
+            title: 'Location',
+            type: 'geopoint',
         },
         {
             name: 'people',
             title: 'Who I Hiked With',
-            type: 'string',
+            type: 'array',
+            of: [{type: 'string'}]
         },
         {
             name: 'mileage',
@@ -55,4 +53,10 @@ export default {
             type: 'blockContent',
         },
     ],
+    preview: {
+        select: {
+            title: 'trailHiked.name',
+            subtitle: 'mileage',
+        }
+    }
 }
