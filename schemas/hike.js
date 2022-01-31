@@ -52,6 +52,14 @@ export default {
             title: 'Body',
             type: 'blockContent',
         },
+        {
+            name: 'mainImage',
+            title: 'Image',
+            type: 'image',
+            options: {
+                hotspot: true
+            }
+        }
     ],
     preview: {
         select: {
