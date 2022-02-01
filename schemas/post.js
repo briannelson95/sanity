@@ -32,6 +32,13 @@ export default {
       options: {
         hotspot: true,
       },
+      fields: [
+          {
+              name: 'alt',
+              title: 'Alternative Text',
+              type: 'string'
+          }
+      ]
     },
     {
       name: 'body',
