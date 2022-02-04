@@ -12,5 +12,11 @@ export default {
             title: 'Trail Name',
             type: 'string',
         },
+        {
+            name: 'rating',
+            title: 'Rating',
+            type: 'rating',
+            description: 'Rate this Trail out of 5 Stars'
+        },
     ],
 }
