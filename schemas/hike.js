@@ -32,20 +32,10 @@ export default {
             to: {type: 'trail'},
         },
         {
-            name: 'location',
-            title: 'Location',
-            type: 'geopoint',
-        },
-        {
             name: 'people',
             title: 'Who I Hiked With',
             type: 'array',
             of: [{type: 'string'}]
-        },
-        {
-            name: 'mileage',
-            title: 'Mileage',
-            type: 'number'
         },
         {
             name: 'body',
@@ -71,7 +61,7 @@ export default {
     preview: {
         select: {
             title: 'trailHiked.name',
-            subtitle: 'mileage',
+            subtitle: 'title',
         }
     }
 }
