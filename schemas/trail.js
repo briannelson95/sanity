@@ -48,7 +48,7 @@ export default {
             }
         },
         {
-            name: 'loaction',
+            name: 'location',
             title: 'Location',
             type: 'geopoint'
         }
