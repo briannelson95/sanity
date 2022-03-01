@@ -61,7 +61,14 @@ export default {
     preview: {
         select: {
             title: 'trailHiked.name',
-            subtitle: 'title',
+            hikeNumber: 'number',
+        },
+        prepare(selection) {
+            const {title, hikeNumber} = selection
+            return {
+                title: title,
+                subtitle: `Hike Number: ${hikeNumber ? hikeNumber : 'unknown'}`
+            }
         }
     }
 }
