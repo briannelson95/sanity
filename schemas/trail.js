@@ -41,9 +41,9 @@ export default {
             type: 'string',
             options: {
                 list: [
-                    {title: 'Out & Back', value: 'outBack'},
-                    {title: 'Loop', value: 'loop'},
-                    {title: 'Point to Point', value: 'point'},
+                    {title: 'Out & Back', value: 'Out & Back'},
+                    {title: 'Loop', value: 'Loop'},
+                    {title: 'Point to Point', value: 'Point to Point'},
                 ]
             }
         },
