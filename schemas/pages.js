@@ -8,28 +8,36 @@ export default {
     fields: [
         {
             name: 'page',
-            title: 'Page',
+            title: 'Page Title',
             type: 'string',
             description: 'The page this content will be on'
         },
         {
-            name: 'title',
-            title: 'H1 Title',
-            type: 'string',
-            description: 'What is the title of the homepage?',
+            name: 'hero',
+            title: 'Hero',
+            type: 'array',
+            of: [
+                { 
+                    type: 'heading'
+                },
+                // { 
+                //     name: 'subHeading',
+                //     title: 'Sub Heading',
+                //     type: 'string',
+                //     validation: Rule => Rule.required()
+                // },
+                {
+                    type: 'cta'
+                }
+            ],
+            description: 'Only used for homepage and landing pages'
         },
-        {
-            name: 'subtitle',
-            title: 'subtitle',
-            type: 'string',
-            description: 'Your tagline'
-        },
-        {
-            name: 'cta',
-            title: 'CTA',
-            type: 'string',
-            description: 'What do you want users to do?',
-        }
+        // {
+        //     name: 'cta',
+        //     title: 'CTA',
+        //     type: 'string',
+        //     description: 'What do you want users to do?',
+        // }
     ],
 
     preview: {

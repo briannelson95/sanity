@@ -11,6 +11,9 @@ import about from './about'
 import pages from './pages'
 import hike from './hike'
 import trail from './trail'
+import cta from './cta'
+import heading from './heading'
+import link from './link'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -28,6 +31,9 @@ export default createSchema({
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
-    trail
+    trail,
+    cta,
+    heading,
+    link
   ]),
 })
